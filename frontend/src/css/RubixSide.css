@@ -1,0 +1,28 @@
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rubix-side {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  width: 300px; /* or whatever fits your layout */
+  border: 2px solid black; /* optional outer border */
+}
+
+.rubix-btn {
+  aspect-ratio: 1 / 1; /* makes each button square */
+  width: 100%;
+  border: 1px solid black; /* black stroke around each square */
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  background-color: red; /* or dynamic color */
+  color: white;
+  box-sizing: border-box;
+}
+
+.rubix-btn:hover {
+    transform: translateY(-2px);
+}
