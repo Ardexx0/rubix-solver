@@ -1,0 +1,31 @@
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.side-select {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.25em;
+}
+
+.selectbtn{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: white;
+    font-size: 0.75em;
+}
+
+.selectbtn.active{
+ color: black;
+ background-color: white;
+}
+
+.selbtn:hover{
+    transform: translateY(-2px);
+}

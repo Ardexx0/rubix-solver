@@ -6,23 +6,44 @@
 
 .rubix-side {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  width: 300px; /* or whatever fits your layout */
-  border: 2px solid black; /* optional outer border */
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  border: 2px solid black;
 }
 
 .rubix-btn {
-  aspect-ratio: 1 / 1; /* makes each button square */
+  aspect-ratio: 1 / 1;
   width: 100%;
-  border: 1px solid black; /* black stroke around each square */
+  border: 1px solid black;
   padding: 0;
   margin: 0;
   font-size: 1rem;
-  background-color: red; /* or dynamic color */
-  color: white;
+  background-color: blue;
+  color: black;
   box-sizing: border-box;
 }
 
 .rubix-btn:hover {
     transform: translateY(-2px);
+}
+
+
+/*The colours for the selector*/
+.sidered{
+    background-color: red;
+}
+.sideblue{
+    background-color: blue;
+}
+.sidegreen{
+    background-color: green;
+}
+.sideorange{
+    background-color: orange;
+}
+.sideyellow{
+    background-color: yellow;
+}
+.sidewhite{
+    background-color: white;
 }

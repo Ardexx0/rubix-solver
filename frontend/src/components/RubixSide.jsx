@@ -1,23 +1,28 @@
+import { useRubixContext } from "../contexts/RubixContext";
 import "../css/RubixSide.css"
 
 function RubixSide() {
 
     //const colour = selectorColour()
     const colourGrid = ['red', 'green', 'blue', 'orange', 'yellow', 'white'];
-    const rubixGrid = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    const {sideNo, selColourNo, sideColours, setSideColours} = useRubixContext();
+    
 
     function onBtnClick(index) {
-        alert(`clicked ${index + 1}`)
+        const newGrid = sideColours.map((row, i) =>
+            i === sideNo ? row.map((block, j) => (j === index ? selColourNo : block)) : row
+        );
+        setSideColours(newGrid);
     }
 
     return (
         <div className="centre">
             <div className="rubix-side">
-                {rubixGrid.map((colour, index) => (
+                {sideColours[sideNo].map((colour, index) => (
                     <button
                         key={index}
                         onClick={() => onBtnClick(index)}
-                        className={`rubix-btn ${colourGrid[colour]}`}
+                        className={`rubix-btn side${colourGrid[colour]}`}
                     >
                         {index + 1}
                     </button>

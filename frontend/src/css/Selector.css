@@ -25,22 +25,31 @@
     transform: translateY(-2px);
 }
 
+.selbtn.active{
+    border: 3px solid white;
+    filter: brightness(85%);
+}
+
+.selbtn.selorange.active{
+    font-size: 0.97em;
+}
+
 /*The colours for the selector*/
-.red{
+.selred{
     background-color: red;
 }
-.blue{
+.selblue{
     background-color: blue;
 }
-.green{
+.selgreen{
     background-color: green;
 }
-.orange{
+.selorange{
     background-color: orange;
 }
-.yellow{
+.selyellow{
     background-color: yellow;
 }
-.white{
+.selwhite{
     background-color: white;
 }
